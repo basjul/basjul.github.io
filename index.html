@@ -74,6 +74,18 @@
                             grid-column: 3;
                             grid-row: 1;
                           }
+                          .four {
+                            grid-column: 1;
+                            grid-row: 2;
+                          }
+                          .five {
+                            grid-column: 2;
+                            grid-row: 2;
+                          }
+                          .six {
+                            grid-column: 3;
+                            grid-row: 2;
+                          }
 </style>
 </head>
 <body>
@@ -85,13 +97,13 @@
 <div class="collapse navbar-collapse justify-content-end" id="navbarCollapse">
 <ul class="navbar-nav">
 <li class="nav-item active">
-<a class="nav-link" href="#">HOME <span class="sr-only">(current)</span></a>
+<a class="nav-link" href="#" style="text-shadow: 0px 0px 5px black;">HOME <span class="sr-only">(current)</span></a>
 </li>
-<li class="nav-item">
-<a class="nav-link" href="#">ABOUT</a>
+<li class="nav-item active">
+<a class="nav-link" href="#" style="text-shadow: 0px 0px 5px black;">ABOUT</a>
 </li>
-<li class="nav-item">
-<a class="nav-link" href="#">DOWNLOAD</a>
+<li class="nav-item active">
+<a class="nav-link" href="#" style="text-shadow: 0px 0px 5px black;">DOWNLOAD</a>
 </li>
 </ul>
 </div>
@@ -100,9 +112,26 @@
 <span style="font-size: 70px; font-weight: 400; margin-left: 10vw; color: white; display: block;text-shadow: 0 0 2px gray, 0 0 3px black"><strong>BASJUL STUDIO</strong></span>
 </div>
 <div class="wrapper">
-  <div class="one">aaa<br></div>
-  <div class="two">Two</div>
-  <div class="three">Three</div>
+  <div class="one">
+    <img src="https://basjul.weebly.com/uploads/1/0/2/9/102958414/img-20190712-175216_orig.jpg" width="25%" style="border-radius: 30px;"><br><br><h6><strong>황금돼지 후스</strong></h2>
+    <br></div>
+  <div class="two">
+    <img src="https://basjul.weebly.com/uploads/1/0/2/9/102958414/jpeg-20190710-150836_orig.jpg" width="25%" style="border-radius: 30px;"><br><br><h6><strong>AP Dev</strong></h2>
+    <br></div>
+  <div class="three">
+    <img src="https://basjul.weebly.com/uploads/1/0/2/9/102958414/jpeg-20190710-170710_1_orig.jpg" width="25%" style="border-radius: 30px;"><br><br><h6><strong>뿌뀨</strong></h2>
+    <br></div>
+  <div class="four">
+    <img src="https://basjul.weebly.com/uploads/1/0/2/9/102958414/img-20190712-175229_orig.jpg" width="25%" style="border-radius: 30px;"><br><br><h6><strong>ML Dev</strong></h2>
+    <br></div>
+  <div class="five">
+    <img src="https://basjul.weebly.com/uploads/1/0/2/9/102958414/profil_orig.png" width="25%" style="border-radius: 30px;"><br><br><h6><strong>ML Dev</strong></h2>
+    <br></div>
+  <div class="six">
+    <img src="https://imgur.com/raRsfJ7.png" width="25%" style="border-radius: 30px;"><br><br><h6><strong>Lemmon</strong></h2>
+    <br></div>
+  </div>
+
 </div>
 <script src='https://code.jquery.com/jquery-3.1.1.min.js'></script>
 <script src='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js'></script>
@@ -144,6 +173,9 @@ $(document).ready(function(){ 
     "animation-fill-mode": "forwards",
     "animation-play-state": "running"
   });
+  $('.nav-link').css({
+    "text-shadow":"0px 0px 0px"
+  })
        }else{ 
   $('i').css({
     "animation-name": "i2",
@@ -165,6 +197,9 @@ $(document).ready(function(){ 
     "animation-fill-mode": "forwards",
     "animation-play-state": "running"
   });
+  $('.nav-link').css({
+    "text-shadow":"1px 3px 10px black",
+  })
   $('.navbar a').css({
     "color":"white"
   });
