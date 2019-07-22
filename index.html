@@ -1,0 +1,186 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<link rel="shortcut icon" type="image/x-icon" href="https://i.ibb.co/DrbyMDh/bas.png" />
+<title>BASJUL STUDIO - HOME</title>
+<link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css'>
+<meta name="viewport" content="width=device-width">
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+      /* Show it is fixed to the top */
+      @import url('https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap');
+      @keyframes on {
+               from {
+                   background: none;
+                   color: white;
+                   padding: 7px
+               }
+               to {
+                   background: white;
+                   color: gray;
+                   border-bottom-color: gray;
+                   border-bottom-style: solid;
+                   border-bottom-width: thin;
+                   padding: 0px 0px 0px 10px;
+               }
+             }
+             @keyframes on1 {
+                      from {
+                          background: white;
+                          color: gray;
+                          padding: 0px 0px 0px 10px
+                      }
+                      to {
+                          background: none;
+                          color: white;
+                          padding: 10px;
+                      }
+                    }
+                    @keyframes i {
+                             from {
+                                 color: white;
+                             }
+                             to {
+                               color: gray;
+                             }
+                           }
+                           @keyframes i2 {
+                                    from {
+                                        color: gray;
+                                    }
+                                    to {
+                                      color: white;
+                                    }
+                                  }
+                                  .wrapper {
+                            display: grid;
+                            grid-template-columns: repeat(3, 1fr);
+                            grid-gap: 10px;
+                            grid-auto-rows: minmax(100px, auto);
+                            text-align: center;
+                          }
+                          .one {
+                            grid-column: 1;
+                            grid-row: 1;
+                          }
+                          .two {
+                            grid-column: 2;
+                            grid-row: 1;
+                          }
+                          .three {
+                            grid-column: 3;
+                            grid-row: 1;
+                          }
+</style>
+</head>
+<body>
+<nav class="navbar navbar-toggleable-md navbar-inverse fixed-top" style="padding: 10px;">
+<button style="border-style: none; margin-top: 10px;" class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="toggle navigation">
+<i class="fa fa-bars fa-lg"></i>
+</button>
+<a class="navbar-brand" href="#" style="font-family: 'Montserrat', sans-serif; font-size: 30px; font-weight: bolder;">BASJUL STUDIO</a>
+<div class="collapse navbar-collapse justify-content-end" id="navbarCollapse">
+<ul class="navbar-nav">
+<li class="nav-item active">
+<a class="nav-link" href="#">HOME <span class="sr-only">(current)</span></a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="#">ABOUT</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="#">DOWNLOAD</a>
+</li>
+</ul>
+</div>
+</nav>
+<div class="bga" style=" background-image: url(http://basjul.weebly.com/uploads/1/0/2/9/102958414/background-images/941973592.jpg);background-position: bottom; height: 100vh ;vh;padding-top: 40vh;background-repeat: no-repeat; font-family: 'Montserrat', sans-serif">
+<span style="font-size: 70px; font-weight: 400; margin-left: 10vw; color: white; display: block;text-shadow: 0 0 2px gray, 0 0 3px black"><strong>BASJUL STUDIO</strong></span>
+</div>
+<div class="wrapper">
+  <div class="one">aaa<br></div>
+  <div class="two">Two</div>
+  <div class="three">Three</div>
+</div>
+<script src='https://code.jquery.com/jquery-3.1.1.min.js'></script>
+<script src='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js'></script>
+<script>
+$(document).ready(function(){ 
+  $(window).scroll(function(){ 
+    var scroll = $(window).scrollTop(); 
+    if(scroll>1){ 
+  $('.navbar').css({
+    "animation-name": "on",
+    "animation-duration": "0.5s",
+    "animation-timing-function": "linear",
+    "animation-delay": "0s",
+    "animation-iteration-count": "1",
+    "animation-direction": "normal",
+    "animation-fill-mode": "forwards",
+    "animation-play-state": "running"
+  });
+  $('.navbar a').css({
+    "color":"gray"
+  });
+  $('i').css({
+    "animation-name": "i",
+    "animation-duration": "0.5s",
+    "animation-timing-function": "linear",
+    "animation-delay": "0s",
+    "animation-iteration-count": "1",
+    "animation-direction": "normal",
+    "animation-fill-mode": "forwards",
+    "animation-play-state": "running"
+  });
+  $('.navbar-brand').css({
+    "animation-name": "smaller",
+    "animation-duration": "0.5s",
+    "animation-timing-function": "linear",
+    "animation-delay": "0s",
+    "animation-iteration-count": "1",
+    "animation-direction": "normal",
+    "animation-fill-mode": "forwards",
+    "animation-play-state": "running"
+  });
+       }else{ 
+  $('i').css({
+    "animation-name": "i2",
+    "animation-duration": "0.5s",
+    "animation-timing-function": "linear",
+    "animation-delay": "0s",
+    "animation-iteration-count": "1",
+    "animation-direction": "normal",
+    "animation-fill-mode": "forwards",
+    "animation-play-state": "running"
+  });
+  $('.navbar').css({
+    "animation-name": "on1",
+    "animation-duration": "0.5s",
+    "animation-timing-function": "linear",
+    "animation-delay": "0s",
+    "animation-iteration-count": "1",
+    "animation-direction": "normal",
+    "animation-fill-mode": "forwards",
+    "animation-play-state": "running"
+  });
+  $('.navbar a').css({
+    "color":"white"
+  });
+  $('.navbar-brand').css({
+    "animation-name": "bigger",
+    "animation-duration": "0.5s",
+    "animation-timing-function": "linear",
+    "animation-delay": "0s",
+    "animation-iteration-count": "1",
+    "animation-direction": "normal",
+    "animation-fill-mode": "forwards",
+    "animation-play-state": "running"
+  });
+        }
+      }) 
+  })
+  </script>
+</body>
+</html>
